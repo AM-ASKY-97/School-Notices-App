@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".AdminCreateAssignmentActivity">
+
+    <RelativeLayout
+        android:id="@+id/topSection"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/top_back_ui"
+        >
+
+        <TextView
+            android:id="@+id/txtBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawableStart="@drawable/baseline_arrow_back"
+            android:text="Back"
+            android:textColor="#FFFFFF"
+            android:paddingStart="20dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:drawableTint="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Assigments"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/topSection"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/examName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tittle"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        />
+
+                    <EditText
+                        android:id="@+id/edTittle"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingLeft="10dp"
+                        android:layout_below="@+id/examName"
+                        android:background="@drawable/round_border"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtQuiz"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Question"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/edTittle"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        />
+
+                    <EditText
+                        android:id="@+id/edQuiz"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_below="@+id/txtQuiz"
+                        android:background="@drawable/round_border"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/txtDue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Due Date"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/edQuiz"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/edDue"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingLeft="10dp"
+                        android:layout_below="@+id/txtDue"
+                        android:background="@drawable/round_border"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:inputType="date" />
+
+                    <TextView
+                        android:id="@+id/txtPdf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="upload the pdf file"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/edDue"
+                        android:layout_marginTop="50dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/imagebrowse"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/txtPdf"
+                        app:srcCompat="@drawable/pdf" />
+
+                    <ImageView
+                        android:id="@+id/filelogo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/txtPdf"
+                        app:srcCompat="@drawable/pdfu" />
+
+                    <ImageView
+                        android:id="@+id/filecancel"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="340dp"
+                        android:layout_marginLeft="210dp"
+                        app:srcCompat="@drawable/img_close" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/btnSave"
+                        android:layout_below="@+id/imagebrowse"
+                        android:layout_marginTop="40dp"
+                        android:text="Create Shedule"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:background="@drawable/btn_register"
+
+                        />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/btnBack"
+                        android:layout_below="@+id/btnSave"
+                        android:layout_marginTop="40dp"
+                        android:text="Back"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:background="@drawable/btn_delete"
+
+                        />
+                </RelativeLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

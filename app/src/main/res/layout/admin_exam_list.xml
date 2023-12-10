@@ -1,0 +1,117 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="8dp"
+    android:id="@+id/itemList"
+    app:cardUseCompatPadding="true"
+    android:layout_marginTop="10dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/exname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Exam Name" />
+
+            <EditText
+                android:id="@+id/edDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Exam Date"
+                android:ems="10"
+                android:inputType="date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nam"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/exname"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtExamName"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="First Semester" />
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="time" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/nam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_edit"
+                android:drawableRight="@drawable/baseline_edit"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:id="@+id/btnEdit"
+                android:paddingRight="30dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:drawableTint="#FFFFFF" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:paddingRight="30dp"
+                android:id="@+id/btnDelete"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/baseline_delete"
+                android:text="Delete"
+                app:drawableTint="#FFFFFF"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_delete"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

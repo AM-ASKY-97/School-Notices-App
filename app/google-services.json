@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "474336370473",
+    "project_id": "school-notices-app",
+    "storage_bucket": "school-notices-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474336370473:android:d7d2de5d9d70d01845e138",
+        "android_client_info": {
+          "package_name": "com.dharussalam.schoolnoticesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474336370473-r3a8dfm883vdto1b6a5t5to0102r3k0i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPiOMCqpy0rBHFLuYqoTZ8A6px3NxNl6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474336370473-r3a8dfm883vdto1b6a5t5to0102r3k0i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

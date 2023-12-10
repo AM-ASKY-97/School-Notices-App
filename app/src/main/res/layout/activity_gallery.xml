@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".GalleryActivity">
+
+    <RelativeLayout
+        android:id="@+id/topSection"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/top_back_ui"
+        >
+
+        <TextView
+            android:id="@+id/txtBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawableStart="@drawable/baseline_arrow_back"
+            android:text="Back"
+            android:textColor="#FFFFFF"
+            android:paddingStart="20dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:drawableTint="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Class Room"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_below="@+id/topSection"
+        android:padding="15dp"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_exam"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="All Subject" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button"
+        android:padding="15dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            app:cardCornerRadius="15dp"
+            android:id="@+id/cardMobileApplication"
+            >
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#566E7A"
+                android:padding="10dp"
+                >
+                
+                <TextView
+                    android:id="@+id/txtMobileApplication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Application"
+                    android:textSize="20sp"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtMobileSemester"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Semester - II"
+                    android:textSize="15sp"
+                    android:textColor="#FFFF"
+                    android:layout_below="@+id/txtMobileApplication"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtLucName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M. H. A. Salik"
+                    android:textSize="18sp"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/txtMobileSemester"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/images_mobile"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            app:cardCornerRadius="15dp"
+            android:id="@+id/cardDataStructure"
+            android:layout_below="@+id/cardMobileApplication"
+            android:layout_marginTop="15dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FF8B66"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/txtDataStructure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data Structure"
+                    android:textSize="20sp"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtDataSemester"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Semester - II"
+                    android:textSize="15sp"
+                    android:textColor="#FFFF"
+                    android:layout_below="@+id/txtDataStructure"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gehan Anthonys"
+                    android:textSize="18sp"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/txtDataSemester"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/images_mobile"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            app:cardCornerRadius="15dp"
+            android:id="@+id/cardUX"
+            android:layout_below="@+id/cardDataStructure"
+            android:layout_marginTop="15dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#32AC71"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/txtUX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data Structure"
+                    android:textSize="20sp"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtUXSemester"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Semester - II"
+                    android:textSize="15sp"
+                    android:textColor="#FFFF"
+                    android:layout_below="@+id/txtUX"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtUxName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gehan Anthonys"
+                    android:textSize="18sp"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/txtUXSemester"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/images_mobile"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            app:cardCornerRadius="15dp"
+            android:id="@+id/cardRequirementEngineering"
+            android:layout_below="@+id/cardUX"
+            android:layout_marginTop="15dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0277BD"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/txtRequirementEngineering"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Requirement Engineering"
+                    android:textSize="20sp"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtRequirementEngineeringSemester"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Semester - II"
+                    android:textSize="15sp"
+                    android:textColor="#FFFF"
+                    android:layout_below="@+id/txtRequirementEngineering"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtRequirementEngineeringName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. KVJP Ekanayake"
+                    android:textSize="18sp"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/txtRequirementEngineeringSemester"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/images_mobile"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+</RelativeLayout>
